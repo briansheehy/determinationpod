@@ -25,7 +25,6 @@
                   margin: 0 auto;
                   padding: 0 24px;
           }
-          /* ── HEADER ── */
           header {
                   border-bottom: 2px solid var(--navy);
                   padding: 28px 0 16px;
@@ -55,7 +54,6 @@
                   padding-bottom: 1px;
           }
           nav a:hover { color: var(--green); border-color: var(--green); }
-          /* ── PLATFORM ROW ── */
           .platforms {
                   background: var(--off-white);
                   border-bottom: 1px solid var(--rule);
@@ -71,7 +69,6 @@
           .platforms a { color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--navy); }
           .platforms a:hover { color: var(--green); border-color: var(--green); }
           .platforms .sep { color: var(--rule); }
-          /* ── LATEST EPISODE ── */
           .latest { border-bottom: 1px solid var(--rule); padding: 28px 0; }
           .section-label {
                   font-size: 0.7rem;
@@ -126,7 +123,6 @@
                   padding-bottom: 1px;
           }
           .listen-link:hover { color: var(--navy); border-color: var(--navy); }
-          /* ── EPISODE LIST ── */
           .episodes { padding: 28px 0; border-bottom: 1px solid var(--rule); }
           .ep-row {
                   display: grid;
@@ -168,7 +164,6 @@
                   padding-bottom: 1px;
           }
           .view-all:hover { color: var(--green); border-color: var(--green); }
-          /* ── TWO COL BOTTOM ── */
           .bottom-grid {
                   display: grid;
                   grid-template-columns: 1fr 1fr;
@@ -176,7 +171,6 @@
                   padding: 28px 0;
                   border-bottom: 1px solid var(--rule);
           }
-          /* About */
           .about-title {
                   font-family: 'Nunito', sans-serif;
                   font-size: 1rem;
@@ -192,7 +186,6 @@
                   border-bottom: 1px solid var(--green);
           }
           .about-link:hover { color: var(--navy); border-color: var(--navy); }
-          /* Newsletter */
           .newsletter-title {
                   font-family: 'Nunito', sans-serif;
                   font-size: 1rem;
@@ -202,30 +195,6 @@
           }
           .newsletter-desc { font-size: 0.88rem; line-height: 1.7; color: var(--mid); margin-bottom: 14px; }
           .newsletter-form { display: flex; flex-direction: column; gap: 8px; }
-          .newsletter-form input {
-                  border: 1px solid var(--rule);
-                  padding: 9px 12px;
-                  font-family: 'DM Sans', sans-serif;
-                  font-size: 0.88rem;
-                  color: var(--ink);
-                  outline: none;
-                  background: var(--white);
-          }
-          .newsletter-form input:focus { border-color: var(--navy); }
-          .newsletter-form input::placeholder { color: var(--mid); }
-          .newsletter-form button {
-                  background: var(--navy);
-                  color: white;
-                  border: none;
-                  padding: 10px;
-                  font-family: 'DM Sans', sans-serif;
-                  font-size: 0.82rem;
-                  font-weight: 500;
-                  cursor: pointer;
-                  transition: background 0.15s;
-          }
-          .newsletter-form button:hover { background: var(--green); }
-          /* ── FOOTER ── */
           footer {
                   padding: 20px 0;
                   font-size: 0.75rem;
@@ -239,127 +208,119 @@
           footer a { color: var(--mid); text-decoration: none; }
           footer a:hover { color: var(--green); }
           .footer-links { display: flex; gap: 16px; }
-        </style>
+    </style>
   </head>
   <body>
 
     <!-- HEADER -->
     <header>
-        <div class="site-name">
-              <span class="de">De</span>span><span class="termination">termination</span>span>
-        </div>div>
-        <div class="site-sub">with Brian Sheehy &nbsp;·&nbsp; DeterminationPod.com</div>div>
-        <nav>
-              <a href="#">Episodes</a>a>
-              <a href="#about">About</a>a>
-              <a href="https://briansheehy-newsletter.beehiiv.com" target="_blank">Newsletter</a>a>
-              <a href="mailto:brian@determinationpod.com">Contact</a>a>
-        </nav>
+      <div class="site-name">
+        <span class="de">De:</span><span class="termination">termination</span>
+      </div>
+      <div class="site-sub">with Brian Sheehy &nbsp;·&nbsp; DeterminationPod.com</div>
+      <nav>
+        <a href="#">Episodes</a>
+        <a href="#about">About</a>
+        <a href="https://briansheehy-newsletter.beehiiv.com" target="_blank">Newsletter</a>
+        <a href="mailto:brian@determinationpod.com">Contact</a>
+      </nav>
     </header>
 
     <!-- PLATFORMS -->
     <div class="platforms">
-        <span>Listen on:</span>
-      <a href="#">Spotify</a>a>
+      <span>Listen on:</span>
+      <a href="#">Spotify</a>
       <span class="sep">·</span>
-      <a href="#">Apple Podcasts</a>a>
+      <a href="#">Apple Podcasts</a>
       <span class="sep">·</span>
-      <a href="#">YouTube</a>a>
+      <a href="#">YouTube</a>
       <span class="sep">·</span>
-      <a href="#">Amazon Music</a>a>
+      <a href="#">Amazon Music</a>
       <span class="sep">·</span>
-      <a href="#">RSS</a>a>
-    </div>div>
-  
-  <!-- LATEST EPISODE -->
-  <div class="latest">
-    <div class="section-label">Latest Episode</div>div>
-    <div class="latest-inner">
-        <div class="ep-thumb">
-              <span class="ep-thumb-num">01</span>
-        </div>div>
-        <div>
-                <div class="latest-meta">Episode 01 &nbsp;·&nbsp; March 2026 &nbsp;·&nbsp; 52 min</div>
-                <a href="#" class="latest-title">Betting on Yourself When Nobody Else Will</a>a>
-                <div class="latest-guest">with Jane Smith, Founder of Arclight</div>
-                <p class="latest-desc">She walked away from a six-figure career to build something from scratch — twice. We dig into the psychology of self-belief, the moments of real doubt, and what it actually takes to keep going.</p>p>
-                <a href="#" class="listen-link">▶ Listen now</a>a>
-        </div>
+      <a href="#">RSS</a>
     </div>
-  </div>
+
+    <!-- LATEST EPISODE -->
+    <div class="latest">
+      <div class="section-label">Latest Episode</div>
+      <div class="latest-inner">
+        <div class="ep-thumb">
+          <span class="ep-thumb-num">01</span>
+        </div>
+        <div>
+          <div class="latest-meta">Episode 01 &nbsp;·&nbsp; March 2026 &nbsp;·&nbsp; 52 min</div>
+          <a href="#" class="latest-title">Betting on Yourself When Nobody Else Will</a>
+          <div class="latest-guest">with Jane Smith, Founder of Arclight</div>
+          <p class="latest-desc">She walked away from a six-figure career to build something from scratch — twice. We dig into the psychology of self-belief, the moments of real doubt, and what it actually takes to keep going.</p>
+          <a href="#" class="listen-link">▶ Listen now</a>
+        </div>
+      </div>
+    </div>
 
     <!-- EPISODE LIST -->
     <div class="episodes">
-        <div class="section-label">All Episodes</div>
-        <a href="#" class="ep-row">
-              <div class="ep-row-num">02</div>
-              <div>
-                      <div class="ep-row-title">The Pivot That Saved Everything</div>
-                      <div class="ep-row-guest">with Sarah Chen, Founder of Arclight</div>
-              </div>
-              <div class="ep-row-meta">48 min<br>Feb 2026</div>
-        </a>a>
-        <a href="#" class="ep-row">
-              <div class="ep-row-num">03</div>
-              <div>
-                      <div class="ep-row-title">Building Trust in Rooms That Don't Want You</div>
-                      <div class="ep-row-guest">with Marcus Webb, CEO of Meridian</div>
-              </div>
-              <div class="ep-row-meta">61 min<br>Feb 2026</div>
-        </a>a>
-        <a href="#" class="ep-row">
-              <div class="ep-row-num">04</div>
-              <div>
-                      <div class="ep-row-title">When the Plan Falls Apart at Midnight</div>
-                      <div class="ep-row-guest">with Diane Torres, Author & Operator</div>
-              </div>
-              <div class="ep-row-meta">44 min<br>Jan 2026</div>
-        </a>a>
-        <a href="#" class="ep-row">
-              <div class="ep-row-num">05</div>
-              <div>
-                      <div class="ep-row-title">What Nobody Tells You About Scaling</div>
-                      <div class="ep-row-guest">with James Okafor, Partner at Northlight</div>
-              </div>
-              <div class="ep-row-meta">57 min<br>Jan 2026</div>
-        </a>a>
-        <a href="#" class="view-all">View all episodes →</a>a>
+      <div class="section-label">All Episodes</div>
+      <a href="#" class="ep-row">
+        <div class="ep-row-num">02</div>
+        <div>
+          <div class="ep-row-title">The Pivot That Saved Everything</div>
+          <div class="ep-row-guest">with Sarah Chen, Founder of Arclight</div>
+        </div>
+        <div class="ep-row-meta">48 min<br>Feb 2026</div>
+      </a>
+      <a href="#" class="ep-row">
+        <div class="ep-row-num">03</div>
+        <div>
+          <div class="ep-row-title">Building Trust in Rooms That Don't Want You</div>
+          <div class="ep-row-guest">with Marcus Webb, CEO of Meridian</div>
+        </div>
+        <div class="ep-row-meta">61 min<br>Feb 2026</div>
+      </a>
+      <a href="#" class="ep-row">
+        <div class="ep-row-num">04</div>
+        <div>
+          <div class="ep-row-title">When the Plan Falls Apart at Midnight</div>
+          <div class="ep-row-guest">with Diane Torres, Author & Operator</div>
+        </div>
+        <div class="ep-row-meta">44 min<br>Jan 2026</div>
+      </a>
+      <a href="#" class="ep-row">
+        <div class="ep-row-num">05</div>
+        <div>
+          <div class="ep-row-title">What Nobody Tells You About Scaling</div>
+          <div class="ep-row-guest">with James Okafor, Partner at Northlight</div>
+        </div>
+        <div class="ep-row-meta">57 min<br>Jan 2026</div>
+      </a>
+      <a href="#" class="view-all">View all episodes →</a>
     </div>
 
     <!-- ABOUT + NEWSLETTER -->
     <div class="bottom-grid">
-        <div id="about">
-              <div class="about-title">About the Show</div>
-              <p class="about-text">The Determination Podcast is a weekly show hosted by Brian Sheehy, business owner, former CPA, and product innovation consultant. Each episode is a real conversation with actionable advice from professionals, entrepreneurs, operators, and builders who refused to quit.</p>p>
-              <a href="https://www.linkedin.com/in/brianhsheehy" target="_blank" class="about-link">More about Brian →</a>a>
+      <div id="about">
+        <div class="about-title">About the Show</div>
+        <p class="about-text">The Determination Podcast is a weekly show hosted by Brian Sheehy, business owner, former CPA, and product innovation consultant. Each episode is a real conversation with actionable advice from professionals, entrepreneurs, operators, and builders who refused to quit.</p>
+        <a href="https://www.linkedin.com/in/brianhsheehy" target="_blank" class="about-link">More about Brian →</a>
+      </div>
+      <div>
+        <div class="newsletter-title">Get New Episodes by Email</div>
+        <p class="newsletter-desc">Each week, a new episode in your inbox the moment it drops. Plus, occasional thoughts from Brian offering insights on confirmed best practices to finding your next opportunity.</p>
+        <div class="newsletter-form">
+          <iframe src="https://embeds.beehiiv.com/e2dc9b6c-efbf-49ba-847e-66cbc95dd0cf" data-test-id="beehiiv-embed" width="100%" height="320" frameborder="0" scrolling="no" style="border-radius:0; border:0; background-color:transparent;"></iframe>
         </div>
-        <div>
-              <div class="newsletter-title">Get New Episodes by Email</div>
-              <p class="newsletter-desc">Each week, a new episode in your inbox the moment it drops. Plus, occasional thoughts from Brian offering insights on confirmed best practices to finding your next opportunity.</p>p>
-              <div class="newsletter-form">
-                      <iframe src="https://embeds.beehiiv.com/e2dc9b6c-efbf-49ba-847e-66cbc95dd0cf" data-test-id="beehiiv-embed" width="100%" height="320" frameborder="0" scrolling="no" style="border-radius:0; border:0; background-color:transparent;"></iframe>iframe>
-              </div>
-        </div>
+      </div>
     </div>
 
     <!-- FOOTER -->
     <footer>
-        <div>© 2026 DeterminationPod.com</div>
-        <div class="footer-links">
-              <a href="#">Episodes</a>a>
-              <a href="#">About</a>a>
-              <a href="mailto:brian@determinationpod.com">Contact</a>a>
-              <a href="#">Privacy</a>a>
-        </div>
+      <div>© 2026 DeterminationPod.com</div>
+      <div class="footer-links">
+        <a href="#">Episodes</a>
+        <a href="#">About</a>
+        <a href="mailto:brian@determinationpod.com">Contact</a>
+        <a href="#">Privacy</a>
+      </div>
     </footer>
 
   </body>
-</html>html>
-    </footer>
-              </div>
-        </div></span>
-        </nav>
-    </header>
-  </body>
-    </style></title>
-  </head>
+</html>
