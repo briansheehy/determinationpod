@@ -128,7 +128,7 @@
                   display: grid;
                   grid-template-columns: 48px 1fr auto;
                   gap: 16px;
-                  align-items: center;
+                  align-items: start;
                   padding: 14px 0;
                   border-bottom: 1px solid var(--rule);
                   text-decoration: none;
@@ -152,8 +152,14 @@
                   line-height: 1.3;
                   transition: color 0.15s;
           }
+          .ep-row-title a {
+                  color: var(--navy);
+                  text-decoration: none;
+          }
+          .ep-row-title a:hover { color: var(--green); }
           .ep-row-guest { font-size: 0.8rem; color: var(--mid); margin-top: 2px; }
           .ep-row-meta { font-size: 0.75rem; color: var(--mid); text-align: right; white-space: nowrap; }
+          .spotify-embed { margin-top: 12px; }
           .bottom-grid {
                   display: grid;
                   grid-template-columns: 1fr 1fr;
@@ -223,10 +229,6 @@
       <span class="sep">·</span>
       <a href="#">Apple Podcasts</a>
       <span class="sep">·</span>
-      <a href="#">YouTube</a>
-      <span class="sep">·</span>
-      <a href="#">Amazon Music</a>
-      <span class="sep">·</span>
       <a href="#">RSS</a>
     </div>
 
@@ -250,14 +252,19 @@
     <!-- EPISODE LIST -->
     <div class="episodes">
       <div class="section-label">All Episodes</div>
-      <a href="#" class="ep-row">
+      <div class="ep-row">
         <div class="ep-row-num">Intro</div>
         <div>
-          <div class="ep-row-title">Introduction to De:termination</div>
+          <div class="ep-row-title">
+            <a href="https://open.spotify.com/episode/66JtuJG9FvPvhAg6NoLk8T" target="_blank">Introduction to De:termination</a>
+          </div>
           <div class="ep-row-guest">with Brian Sheehy</div>
+          <div class="spotify-embed">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/66JtuJG9FvPvhAg6NoLk8T?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
         </div>
         <div class="ep-row-meta">2 min<br>April 2026</div>
-      </a>
+      </div>
     </div>
 
     <!-- ABOUT + NEWSLETTER -->
