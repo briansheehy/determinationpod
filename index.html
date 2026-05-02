@@ -410,10 +410,8 @@
       <div id="det-form">
         <h3>After you listen — stay in the loop.</h3>
         <p class="pop-desc">Brian's weekly newsletter highlights the "1 Thing" you need to remember from each episode and breaks down actionable career advice from the guests themselves.</p>
-        <form action="https://embeds.beehiiv.com/e2dc9b6c-efbf-49ba-847e-66cbc95dd0cf" method="POST" target="_blank" onsubmit="detSuccess()">
-          <input id="pop-email" type="email" name="email" placeholder="Your email address" required />
-          <button id="pop-submit" type="submit">Subscribe to the newsletter</button>
-        </form>
+        <input id="pop-email" type="email" placeholder="Your email address" />
+        <button id="pop-submit" onclick="detSubmit()">Subscribe to the newsletter</button>
         <button id="pop-skip" onclick="detClose()">No thanks</button>
       </div>
       <div id="det-success" style="display:none">
@@ -428,11 +426,28 @@
       document.getElementById('det-overlay').style.display = 'none';
       localStorage.setItem('det_popup', '1');
     }
-    function detSuccess() {
-      setTimeout(function() {
+    function detSubmit() {
+      var email = document.getElementById('pop-email').value;
+      if (!email || email.indexOf('@') < 0) {
+        document.getElementById('pop-email').style.borderColor = 'rgba(255,100,100,0.7)';
+        return;
+      }
+      var btn = document.getElementById('pop-submit');
+      btn.textContent = 'Subscribing...';
+      btn.disabled = true;
+
+      var form = new FormData();
+      form.append('email', email);
+
+      fetch('https://embeds.beehiiv.com/e2dc9b6c-efbf-49ba-847e-66cbc95dd0cf', {
+        method: 'POST',
+        mode: 'no-cors',
+        body: form
+      }).finally(function() {
         document.getElementById('det-form').style.display = 'none';
         document.getElementById('det-success').style.display = 'block';
-      }, 400);
+        localStorage.setItem('det_popup', '1');
+      });
     }
     window.addEventListener('load', function() {
       if (localStorage.getItem('det_popup')) return;
