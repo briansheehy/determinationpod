@@ -160,6 +160,18 @@
           .ep-row-guest { font-size: 0.8rem; color: var(--mid); margin-top: 2px; }
           .ep-row-meta { font-size: 0.75rem; color: var(--mid); text-align: right; white-space: nowrap; }
           .spotify-embed { margin-top: 12px; }
+          .ep-toggle-btn {
+                  background: none;
+                  border: none;
+                  cursor: pointer;
+                  font-family: 'DM Sans', sans-serif;
+                  font-size: 0.85rem;
+                  font-weight: 500;
+                  color: var(--green);
+                  padding: 0;
+                  border-bottom: 1px solid var(--green);
+          }
+          .ep-toggle-btn:hover { color: var(--navy); border-color: var(--navy); }
           .bottom-grid {
                   display: grid;
                   grid-template-columns: 1fr 1fr;
@@ -292,6 +304,17 @@
         <div class="ep-row-meta">48 min<br>June 2, 2026</div>
       </div>
 
+      <!-- Show More Toggle -->
+      <div class="ep-row" id="show-more-row">
+        <div class="ep-row-num"></div>
+        <div>
+          <button id="show-more-btn" onclick="toggleOlderEpisodes()" class="ep-toggle-btn">Show earlier episodes (1–7 + Intro) ↓</button>
+        </div>
+        <div></div>
+      </div>
+
+      <div id="older-episodes" style="display:none;">
+
       <!-- Episode 7: Alan DeBekker -->
       <div class="ep-row">
         <div class="ep-row-num">07</div>
@@ -386,6 +409,8 @@
           <div class="ep-row-guest">with Brian Sheehy</div>
         </div>
         <div class="ep-row-meta">2 min<br>April 2026</div>
+      </div>
+
       </div>
 
     </div>
@@ -498,6 +523,13 @@
   </div>
 
   <script>
+    function toggleOlderEpisodes() {
+      var el = document.getElementById('older-episodes');
+      var btn = document.getElementById('show-more-btn');
+      var isHidden = el.style.display === 'none';
+      el.style.display = isHidden ? 'block' : 'none';
+      btn.textContent = isHidden ? 'Show fewer episodes ↑' : 'Show earlier episodes (1–7 + Intro) ↓';
+    }
     function detClose() {
       document.getElementById('det-overlay').style.display = 'none';
       localStorage.setItem('det_popup', '1');
