@@ -245,20 +245,20 @@
       <a href="https://api.riverside.fm/hosting/albZ7wR6.rss" target="_blank">RSS</a>
     </div>
 
-    <!-- LATEST EPISODE — Episode 11: Mike Jones -->
+    <!-- LATEST EPISODE — Episode 12: Brian O'Connor -->
     <div class="latest">
       <div class="section-label">Latest Episode</div>
       <div class="latest-inner">
         <div class="ep-thumb">
-          <span class="ep-thumb-num">11</span>
+          <span class="ep-thumb-num">12</span>
         </div>
         <div>
-          <div class="latest-meta">Episode 11 &nbsp;·&nbsp; July 1, 2026 &nbsp;·&nbsp; 63 min</div>
-          <a class="latest-title">Choose to take control of A.I. in your life</a>
-          <div class="latest-guest">with Mike Jones</div>
-          <p class="latest-desc">Mike Jones is a Fractional PMO &amp; Workflow Architect. He says we all have a choice in how we interact with A.I., and you can take steps now to take control of it.</p>
+          <div class="latest-meta">Episode 12 &nbsp;·&nbsp; July 15, 2026 &nbsp;·&nbsp; 57 min</div>
+          <a class="latest-title">Storytelling is the story</a>
+          <div class="latest-guest">with Brian O'Connor</div>
+          <p class="latest-desc">Brian O'Connor is a growth advisor, entrepreneur and podcast host. He says it's not enough to have a great story, you have to frame it for your audience.</p>
           <div class="spotify-embed" style="margin-top:14px;">
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/3Hf9UxPlyD7QSjs4Uml6av?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/62zc76oag24efnI0zzNIcP?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
         </div>
       </div>
@@ -267,6 +267,18 @@
     <!-- EPISODE LIST -->
     <div class="episodes">
       <div class="section-label">All Episodes</div>
+
+      <!-- Episode 11: Mike Jones -->
+      <div class="ep-row">
+        <div class="ep-row-num">11</div>
+        <div>
+          <div class="ep-row-title">
+            <a href="https://open.spotify.com/embed/episode/3Hf9UxPlyD7QSjs4Uml6av" target="_blank">Choose to take control of A.I. in your life</a>
+          </div>
+          <div class="ep-row-guest">with Mike Jones</div>
+        </div>
+        <div class="ep-row-meta">63 min<br>July 1, 2026</div>
+      </div>
 
       <!-- Episode 10: Alan Shipnuck -->
       <div class="ep-row">
@@ -292,6 +304,17 @@
         <div class="ep-row-meta">54 min<br>June 10, 2026</div>
       </div>
 
+      <!-- Show More Toggle -->
+      <div class="ep-row" id="show-more-row">
+        <div class="ep-row-num"></div>
+        <div>
+          <button id="show-more-btn" onclick="toggleOlderEpisodes()" class="ep-toggle-btn">Show earlier episodes (1–8 + Intro) ↓</button>
+        </div>
+        <div></div>
+      </div>
+
+      <div id="older-episodes" style="display:none;">
+
       <!-- Episode 8: Jonas Shoor -->
       <div class="ep-row">
         <div class="ep-row-num">08</div>
@@ -303,17 +326,6 @@
         </div>
         <div class="ep-row-meta">48 min<br>June 2, 2026</div>
       </div>
-
-      <!-- Show More Toggle -->
-      <div class="ep-row" id="show-more-row">
-        <div class="ep-row-num"></div>
-        <div>
-          <button id="show-more-btn" onclick="toggleOlderEpisodes()" class="ep-toggle-btn">Show earlier episodes (1–7 + Intro) ↓</button>
-        </div>
-        <div></div>
-      </div>
-
-      <div id="older-episodes" style="display:none;">
 
       <!-- Episode 7: Alan DeBekker -->
       <div class="ep-row">
@@ -528,7 +540,7 @@
       var btn = document.getElementById('show-more-btn');
       var isHidden = el.style.display === 'none';
       el.style.display = isHidden ? 'block' : 'none';
-      btn.textContent = isHidden ? 'Show fewer episodes ↑' : 'Show earlier episodes (1–7 + Intro) ↓';
+      btn.textContent = isHidden ? 'Show fewer episodes ↑' : 'Show earlier episodes (1–8 + Intro) ↓';
     }
     function detClose() {
       document.getElementById('det-overlay').style.display = 'none';
