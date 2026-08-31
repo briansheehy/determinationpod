@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Transcripts | De:termination with Brian Sheehy</title>
+      <meta name="description" content="Every De:termination episode with a one-thing takeaway and full transcript — Brian Sheehy's conversations on career reinvention with guests from every industry.">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;0,800;1,800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+          :root {
+                  --navy: #1e2d4a;
+                  --green: #3d6b35;
+                  --white: #ffffff;
+                  --off-white: #f9f9f7;
+                  --rule: #e0e0dc;
+                  --mid: #666660;
+                  --ink: #1a1a18;
+          }
+          * { margin: 0; padding: 0; box-sizing: border-box; }
+          body {
+                  background: var(--white);
+                  color: var(--ink);
+                  font-family: 'DM Sans', sans-serif;
+                  font-weight: 400;
+                  max-width: 860px;
+                  margin: 0 auto;
+                  padding: 0 24px;
+          }
+          header { border-bottom: 2px solid var(--navy); padding: 28px 0 16px; }
+          .site-name {
+                  font-family: 'Nunito', sans-serif;
+                  font-style: italic;
+                  font-size: 2.2rem;
+                  font-weight: 800;
+                  letter-spacing: -0.02em;
+                  line-height: 1;
+                  margin-bottom: 4px;
+                  text-decoration: none;
+                  display: inline-block;
+          }
+          .site-name .de { color: var(--navy); }
+          .site-name .termination { color: var(--green); }
+          .site-sub { font-size: 0.88rem; color: var(--mid); margin-bottom: 16px; }
+          nav { display: flex; gap: 20px; font-size: 0.82rem; }
+          nav a { color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--navy); padding-bottom: 1px; }
+          nav a:hover { color: var(--green); border-color: var(--green); }
+          nav a.active { color: var(--green); border-color: var(--green); font-weight: 500; }
+
+          .page-intro { padding: 28px 0 8px; }
+          .page-title {
+                  font-family: 'Nunito', sans-serif;
+                  font-size: 1.8rem;
+                  font-weight: 800;
+                  color: var(--navy);
+                  margin-bottom: 8px;
+          }
+          .page-desc { font-size: 0.92rem; color: var(--mid); line-height: 1.6; max-width: 560px; margin-bottom: 8px; }
+
+          .ep-list { padding: 20px 0 40px; }
+          details.ep-item { border-bottom: 1px solid var(--rule); scroll-margin-top: 20px; }
+          details.ep-item summary {
+                  list-style: none;
+                  cursor: pointer;
+                  padding: 20px 0;
+                  display: grid;
+                  grid-template-columns: 44px 1fr auto;
+                  gap: 16px;
+                  align-items: start;
+          }
+          details.ep-item summary::-webkit-details-marker { display: none; }
+          .ep-num {
+                  font-family: 'Nunito', sans-serif;
+                  font-size: 1.1rem;
+                  font-weight: 800;
+                  color: var(--rule);
+                  font-style: italic;
+          }
+          .ep-summary-main { min-width: 0; }
+          .ep-title-row {
+                  font-family: 'Nunito', sans-serif;
+                  font-size: 1.05rem;
+                  font-weight: 800;
+                  color: var(--navy);
+                  line-height: 1.3;
+                  margin-bottom: 3px;
+          }
+          .ep-guest-row { font-size: 0.8rem; color: var(--mid); margin-bottom: 8px; }
+          .ep-one-thing { font-size: 0.86rem; color: var(--ink); line-height: 1.55; max-width: 560px; }
+          .ep-toggle { font-size: 0.75rem; color: var(--green); white-space: nowrap; padding-top: 4px; font-weight: 500; }
+          details.ep-item[open] .ep-toggle .closed-label { display: none; }
+          details.ep-item:not([open]) .ep-toggle .open-label { display: none; }
+
+          .ep-body { padding: 0 0 28px 60px; }
+          .ep-body-embed { margin-bottom: 20px; }
+          .ep-body-embed iframe { border-radius: 12px; }
+          .transcript-note { font-size: 0.76rem; color: var(--mid); font-style: italic; margin-bottom: 16px; }
+          .t-row { display: grid; grid-template-columns: 74px 1fr; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--off-white); }
+          .t-speaker { font-size: 0.76rem; font-weight: 500; padding-top: 2px; }
+          .sp-a { color: var(--navy); }
+          .sp-b { color: var(--green); }
+          .t-text { font-size: 0.87rem; line-height: 1.65; color: var(--ink); }
+
+          .ep-item.stub summary { cursor: default; }
+          .stub-note { font-size: 0.78rem; color: var(--mid); font-style: italic; padding-top: 4px; }
+
+          footer {
+                  padding: 20px 0 40px;
+                  font-size: 0.75rem;
+                  color: var(--mid);
+                  display: flex;
+                  justify-content: space-between;
+                  border-top: 1px solid var(--rule);
+          }
+          footer a { color: var(--navy); text-decoration: none; margin-left: 16px; }
+          footer a:hover { color: var(--green); }
+
+          @media (max-width: 560px) {
+                  summary { grid-template-columns: 32px 1fr; }
+                  .ep-toggle { grid-column: 1 / -1; padding-top: 8px; }
+                  .ep-body { padding-left: 0; }
+                  .t-row { grid-template-columns: 1fr; gap: 4px; }
+          }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <a href="/" class="site-name"><span class="de">De:</span><span class="termination">termination</span></a>
+      <div class="site-sub">with Brian Sheehy &nbsp;&middot;&nbsp; DeterminationPod.com</div>
+      <nav>
+        <a href="/">Episodes</a>
+        <a href="/transcripts/" class="active">Transcripts</a>
+        <a href="/#about">About</a>
+        <a href="https://briansheehy-newsletter.beehiiv.com" target="_blank">Newsletter</a>
+        <a href="mailto:brian@determinationpod.com">Contact</a>
+      </nav>
+    </header>
+
+    <div class="page-intro">
+      <div class="page-title">Every Transcript is Here</div>
+      <p class="page-desc">Read the transcript and see what our guests really said, in their own words.</p>
+    </div>
+
+    <div class="ep-list">
+      <details class="ep-item" id="ep-17">
+        <summary>
+          <div class="ep-num">17</div>
+          <div class="ep-summary-main">
+            <div class="ep-title-row">Nothing Great Is Ever Accomplished Without Enthusiasm</div>
+            <div class="ep-guest-row">with Dr. Matthew Horkey, Wine Influencer, Author & Former Chiropractor &middot; 47 min &middot; August 26, 2026</div>
+            <div class="ep-one-thing">Dr. Matthew Horkey is a wine influencer, author, and former chiropractor. He says the biggest predictor of success is enthusiasm and energy, and that is his edge in the crowded wine media space.</div>
+          </div>
+          <div class="ep-toggle">
+            <span class="closed-label">Read transcript &darr;</span>
+            <span class="open-label">Collapse &uarr;</span>
+          </div>
+        </summary>
+        <div class="ep-body">
+          <div class="ep-body-embed">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3rHaxjXeBuUnZGYaUhPOxW?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          <div class="transcript-note">Lightly cleaned for readability. Some filler words and false starts removed.</div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Hey Matt, thanks for joining me today.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Thanks for having me. Looking forward to it.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah, fantastic. So we were we were just chatting offline. we&#x27;re we&#x27;re I&#x27;m originally from the Detroit area. You&#x27;re in Southeast Michigan. what&#x27;s the what&#x27;s the wine scene like in in the Detroit, Southeast Michigan area?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Yeah, I just moved back to the USA probably four years ago after being abroad for about fourteen years. And I have to say because Ann Arbor is I live very close to Ann Arbor, it&#x27;s quite dynamic. it&#x27;s a college town, obviously a v a very well educated, very well to do college town. And so Michigan the Michigan wine scene is actually quite dynamic because you also have a lot of New Yorkers, a lot of people</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay. Okay. Okay. That&#x27;s great. That feels I probably wasn&#x27;t into wine when I lived there, but that that that feels a lot different than maybe when I grew up. Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Yeah, yeah, I was I was not into wine when I left Michigan. Excuse I left after university. So that was that was the first time that was tech two thousand four. I was not I mean, I had just started drinking wine, but that was drinking supermarket wine when I could afford &#x27;cause I was a pro college student. So I was not and when I would come back over the years I was not connected to the industry, but I&#x27;ve done my best to reach out and see what what Michigan has to offer when I&#x27;m here.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Sure. Sure. Yeah, yeah. So when you so when you left college, when you got into the working world, wine was not your profession, influencing was not your influencer was not your profession, you were a chiropractor. Can you talk talk a little bit how you got into that?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Well, I saw I saw a little film called Sideways. It came out in two thousand four. I was a la my senior at Michigan State University. I had never drank wine besides having like the grape juice at communion, because I grew up Lutheran, even though I&#x27;m not a religious person. So I found I found it fascinating because the intellectual component behind it and to and geography. I was a geology and chemistry and pre-med major. I found that fascinating. I moved</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">From Michigan State in 2004 to Atlanta, Georgia, where I ran to chiropractic college. It&#x27;s a four-year program. And when I finished, that was 2000. Sorry, I enrolled in 2005, I believe. And then I finished 2009. I immediately got on a plane. Literally the day after graduation, my parents came down, my family came down, saw me, saw commencement. I got on a plane and I traveled around the world until my runny ran out. I I I set up a f</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">wow.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Thank goodness I can go back there. I sit up practice in Singapore. I started with nothing. I just was eating a plate of rice every day. I was that&#x27;s pretty much all I could afford, putting on some cheap crappy suit I got from Thailand going to networking. And by the time I left in fifteen, it was the one of the busiest clinics in Southeast Asia. which was really a a rewarding experience. A lot of people flying in to see me from all over the all over the region. So that was quite an interesting thing and</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">in English around the wines of the time, especially Georgia. Georgia just about a year later just started to blow up internationally. So I wrote my first book on wine. I started blogging and doing videos about wine from obscure wine regions. That was like my calling card to start. Now I cover the entire world. I travel p this year has been a little slower, but usually I travel fifty to sixty percent of the year. I mean last year I was in South America three times Ukra I went to Ukraine.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">I&#x27;m in Europe, all the normal European places, Eastern Europe, Oregon. I was all over the place last year saying I&#x27;m about to I&#x27;m about to leave on Saturday and travel season&#x27;s about to hit hard. So that&#x27;s it. I came back to Michigan in 2022 because and I saw my fam my parents were were older. My sister had my sisters had kids. And I was like, man, I&#x27;ve been a long away for so long, so I not necessarily by choice decided to kind of plant roots back here again.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Okay. Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Luckily I travel enough to keep things interesting.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Well, I you so I wanna I wanna touch on so how I discovered your content on Instagram was I I I re but the very first video I saw for obviously I was looking at other wine videos and then you&#x27;re you got into my algorithm and so now I&#x27;m now I&#x27;m seeing yours. But you were somewhere in Georgia or Montenegro or Serbia, you were in a place where of course they&#x27;ve had wine for years and years and years. but it&#x27;s not a popular wine destination. It&#x27;s not a place</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Yeah, I I started in Eastern Europe for the most part. That&#x27;s where I s because I mean I love Barolo. W now I love Ki I mean, I think I love Kianti Classic. I Sangiovesi more than more than Nebbiolo, but I was brand new. I couldn&#x27;t write about the the well known regions of the world. So I started writing about obscure wine regions. I even lived in the Balkans for quite some time because I traveled dur I mean from two thousand fifteen to two thousand twenty two I traveled around the world without a home. I traveled full time.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">around the wine world and that&#x27;s why I was doing this. And East Eastern the the quality of wines is outstanding. they really have a lot of characters, a lot of unique varieties. And there are some really excit exciting stories to be told. There&#x27;s a long history of production in these countries. a lot was kinda hid hidden behind especially ex-Yugoslavia when it was in the socialist times, Hungary, Romania when it was full communist times. So things were kind of hidden behind state wineries and and state cooperatives.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm. Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">So you don&#x27;t see a lot of these wines exported. Croatian wines are fantastic, but because of I mean there&#x27;s 18 million tourists and most of that is in July and August. So these wines never leave the country on top of the voracious domestic market. Budapest in Hungary is another great example. Bucharest in Romania, where it&#x27;s you know one of the largest cities in Europe. I and definitely I think it&#x27;s the largest in southeastern Europe. So</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">He was, I saw that, yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">rectified grape must to make wine, but some grow their own grapes. So there&#x27;s exciting wines being made, you know, all around the world.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">And how so you&#x27;re in let&#x27;s say you&#x27;re in Georgia. Let&#x27;s say that&#x27;s where I first discovered you, but you&#x27;ve been there and you&#x27;ve filmed content from there. How are you f how I can&#x27;t imagine someone from the States is just showing up and and knocking on their door and saying, Let me do a tasting. How are you arranging that? How are you how are you how are you breaking how are you breaking in there?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">That was to my advantage.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Right. Sure, I could see that. Yeah. And you you said you had a website when you started. I know you&#x27;ve you now you&#x27;re videos, you&#x27;re on YouTube, Instagram, you&#x27;re on all the platforms. W I guess what made you want to start doing video? And then I I have to ask as someone who&#x27;s also just started into video, how cringe worthy were those first ones? I mean, were you did you d</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">they were they&#x27;re they&#x27;re ter they&#x27;re still up. Everything&#x27;s up. I you know, I&#x27;ve been doing YouTube now for over ten years and the first seven years I had no idea what I was doing. I was shooting on an iPhone six, luckily with a good microphone. So like the first seven years I had no I mean, it took me three years to get a thousand subscribers. I didn&#x27;t really care at the time. It was just a creative outlet, but the videos were like pretty terrible.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">wow.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">I shoot with all Netflix approved cinema c cinema cameras. So I&#x27;ve learned that by doing this over and over and over again. But I was hungry to learn how to do it. And it it&#x27;s fulfilling, you know, with AI and everything like that. The one thing that AI has kind of failed on so far is video production. Even Sora closed its g they were producing video and they&#x27;ve kind of closed their doors because it just cost too much and the video wasn&#x27;t great. So you know, in some ways I</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Yeah, and for people who haven&#x27;t checked you out, I&#x27;ll I&#x27;ll put some links in the show notes. I mean your your videos are they&#x27;re they&#x27;re dramatic. There&#x27;s cutaways to the label, the label&#x27;s spinning as you&#x27;re talking about the the wine you&#x27;re tasting, and it&#x27;s it&#x27;s very wild, it&#x27;s it&#x27;s it&#x27;s high quality. It&#x27;s very high quality stuff.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Thank you. I&#x27;m quite inspired I still have a lot of room to grow. You know, some of my favorite YouTubers are s are I watch a lot of cinematography or photographers. You know, I see some YouTubers that their videos like are better or on par with stuff that&#x27;s produced in Hollywood. And that&#x27;s amazing now because you can do that. You could do that, even that kind of content with an iPhone if you know how to light. Really. It&#x27;s it&#x27;s pretty incredible. but I appreciate it. It&#x27;s something that I&#x27;m working better at. I wish I had a little bit more time. I&#x27;m a one man show so</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Sure. Sh So how did you know at what point did you know this was this could this is gonna be a full time thing for me?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">God, I still don&#x27;t even know. Sometimes I beat my head on the table. What the heck? You know, when people ask me, I&#x27;m one of the rare people in the media business, which is it&#x27;s very difficult to make a living in the media side in wine. You know, it it&#x27;s it it mimics even more the discrepancy between what&#x27;s happening in America and around the world. I mean, you have some of the top guys, the handful of guys, you know, the James Sucklings, the guys at Wine Spectator, big making big time money. You have basically node middle class and a huge</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">starving lower class where they&#x27;re just try they&#x27;re just doing it maybe thing writing or doing things to get a few free bottles or maybe hopefully get out on some trips or maybe their husband or their wife has has an income. There are very few people that are doing this full time. And then then journalists, I&#x27;m on journalist trips a lot of times, but you know journalism&#x27;s not journalists are really struggling these days, especially print and now even online journalism with AI, how it can summarize everything.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Q4 last year, Q1 was great this year. So yeah, every time, you know, in life, you know, I&#x27;m sure you see this when you were consulting companies or doing everything. You maybe you think you&#x27;re not doing the right thing, but if you just if you&#x27;re do giving it all you got and you&#x27;re putting your head down, like one brick is laid in front of you and is illuminated. So you just kind of keep going. This is the hardest thing I&#x27;ve ever done. It&#x27;s harder making doing this, making a living than building a practice from scratch, a very large chiropractic practice from scratch.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">In another country. Yeah. W I correct me if I&#x27;m wrong, but I I I thought I you I saw in a video once you mentioned you you spend time actually working in a wine shop or w working in retail wine, is that correct?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">I I did that for a year just to see that side of the business. And I I wanted to work with distribu that&#x27;s where I learned a little bit more about &#x27;cause I d I travel so much when I come back home to Michigan, I don&#x27;t want to go I never eat out restaurant. I mean, I get I&#x27;ve got so many review samples sent to me. I my own collect I got thousands of bottles here in the cellar. I never wanna I cook. I I I you know, I&#x27;m not a huge fan of restaurant food in America &#x27;cause I&#x27;m in Europe and I&#x27;m in Asia and I&#x27;m in</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">you know, amazing places all the time. So I don&#x27;t really want to eat out that much. But I took that job to to see that side of the business because I&#x27;d never worked in a restaurant. I just started writing about wine. And when you&#x27;re writing about wine, you&#x27;re going, all these small producers, everything&#x27;s great, blah, blah, blah, blah. But then there&#x27;s a difference about what people are actually buying. I wanted to see that side of the business. And since I was pretty much overqualified for the job, they let me they gave me carte blanche on like my schedule. &#x27;Cause I was like every two weeks I was like, I&#x27;m gone.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">for a week or I&#x27;m gone for two weeks and they had to find a way to work around me, which they did. I never missed a trip. and I I I wanted to do it for one year, but you probably have this problem with a lot of people on your on your show. And maybe you&#x27;re the same way. I don&#x27;t you&#x27;re are you a full entrepreneur now? Are you still doing are you are you in house consultant?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah. wow. Yeah. No, I&#x27;ve I&#x27;ve juggle a couple of things. Yeah. Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Okay. So one of my friends, one of my good friends, he was actually he&#x27;s an entrepreneur. He was the vice president of the NBA in Europe and Asia, the National Basketball Association for years. And he had his own business in Singapore. That&#x27;s where we connected. I&#x27;ll see him actually two weeks in Portugal. And when when we were sitting down having a he likes wine too, having a glass, and he said, Matt, problem with guys like you and I, we&#x27;re unemployable.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Ha ha. Yeah, not easy. Yeah, what goo no, go ahead, f finish that thought.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">There there&#x27;s a huge disconnect in bet in the wine business. Obviously, it&#x27;s so segmented between what most people drink and what people that communicate wine talk about and drink. And it&#x27;s no different I always compare it to hamburgers. I&#x27;m not a big burger guy, even though I make my own but like I haven&#x27;t had McDonald&#x27;s since I was sixteen years old, besides the coffee. I&#x27;ve never eaten I just don&#x27;t like fast food. I don&#x27;t like the smell. Some people love it or some people just get it out of convenience and think that&#x27;s amazing, versus you have some, you know.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">That&#x27;s why it&#x27;s difficult. I mean, that&#x27;s why I focused on YouTube. I stopped writing. I was like, I can&#x27;t be the best writer in the world, but can I produce the best wine videos in the world? I think I think it&#x27;s more possible. I think it&#x27;s more achievable, something that I would like to enjoy to do, and not there yet, but could I do it? I think I could.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">D so now I have to ask, when you so we I&#x27;ve I and you&#x27;ve posted on this, but you had a little bit of a college reunion recently. So when you&#x27;re showing up to that or you&#x27;re showing up to a dinner party or an event, you&#x27;re bringing a bottle of wine, I would assume. or maybe you&#x27;re not. But are people like what people are like, What wait, wait, what did Matt bring? Hold on a sec. We gotta take a look at what Matt brought first.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">I&#x27;ll bring it. They do and they don&#x27;t. I well first of all, you&#x27;re always welcome if you bring booze, right? You&#x27;re always welcome if you bring the booze. I&#x27;m always showing up. Yes, I just did I just did a Michigan State kind of reunion. I brought probably twelve bottles because it was like three days we&#x27;re camping over the campfire. You know, just drinking out of whatever. I brought good wines that I went and drink to, nothing ridiculously complex. And people were like, Yeah, but you know, you really see the de like people they see like you know people know, I don&#x27;t know if</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Ha ha.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">how into wine your friends are. Are your do you have friends that are into wine or just kind of casual? Okay. Well, you know, with casual casual people usually know what a good wine is when they put in their mouth. They usually know. It&#x27;s pretty it&#x27;s pretty obvious. And they&#x27;ll say, wow, but then then you just kind of go back to whatever you&#x27;re eating or whatever. They it&#x27;s it&#x27;s not something that you value. and I think the most what people get what&#x27;s get l what gets lost in wine a lot of times is</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">I do. I do, yes. Mm-hmm. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">It&#x27;s not really about the wine itself. Only us weird geeks get into that kind of thing. But it&#x27;s to me the purpose of wine is really to keep the purpose of a bottle of wine is to keep the people that you love at the dinner table just a little bit longer, keep the conversation going. And it&#x27;s wines ru some of the best, most memorable experience with wine I&#x27;ve ever had have been not that wines that are super prestigious. And I have had the &#x27;cause I am in the industry and I am a geek. I&#x27;ve had the privilege to taste, you know, most of the greatest wines in the world.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">We have a couple hundred in the house.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Okay. I I have okay, I&#x27;m I&#x27;m still fairly young. I still have pr I probably have my personal my personal collection probably close to two thousand and nothing is I have a couple, you know, more marquee wines, but most of it is stuff that&#x27;s like thirty to eighty bucks. That&#x27;s I I I know is is good. I know it&#x27;s gonna drink well, I know it&#x27;s gonna age well. So y you know, people can get caught up</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay. Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">in names and stuff like that, but really the the purpose of wine is enjoyment, &#x27;cause it&#x27;s the to me, the most delicious beverage on the planet. I don&#x27;t know how you got into wine or what you drank, but that&#x27;s that&#x27;s what I feel.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">D</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Santa Barbara County is my favorite Rhine region in America. I think it&#x27;s not only California. I think the I think what&#x27;s produced there is just phenom like everything does well. It&#x27;s phenomenal. it&#x27;s more laid back. You I I don&#x27;t you&#x27;re pr you&#x27;re probably what, an hour and a half away from Santa Barbara, so</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Ha ha ha. Yeah. Yes. Yes. Yes. And it&#x27;s lovely. And it&#x27;s lovely to go up there and it&#x27;s still an awesome, awesome spot. of course. So yeah. But we&#x27;re I&#x27;m actually we&#x27;re going to Rioja in November. so we&#x27;re gonna go check that area out. Just for a day. We&#x27;re just gonna we&#x27;ll be in San Sebastian, we&#x27;re gonna pop down for a day. to Harrow.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">nice. I&#x27;ll be in Bill I&#x27;ll be able I&#x27;ll be in Bilbao and then I&#x27;m going to Rioja. I was in Rioja last November too for Rioja camp. You&#x27;re gonna have a blast. I don&#x27;t know if you&#x27;ve ever been there before. But you&#x27;re if you&#x27;re stopping in Haro, you can stop by all the at the train station, all the main what you can hit like six tasting rooms in like a couple hours. the the food in Haro, the the tapas bars are very good.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">I haven&#x27;t. Yeah. That&#x27;s that&#x27;s what it looked like. Yeah, that&#x27;s what it looked like.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">I&#x27;m s my friend lives in San Sebastian. I&#x27;m staying in Bilbao this time. It&#x27;s a media trip, but I&#x27;m gonna extend my trip and stay in Bilbao a few extra days, maybe even head over to Ribera del Duero. So yeah, that you&#x27;ll have a good time.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay. that&#x27;s great. I&#x27;ll have to we&#x27;ll have to side we&#x27;ll have to side text I&#x27;ll side text you some questions on on on where to go for sure. no yeah and I&#x27;m looking forward to that. So that&#x27;s we had a we have we have friends now in Portugal and they were just here and they brought some wine back from Portugal and they&#x27;re you know, I think it&#x27;s the it&#x27;s the baga grape. You gotta you gotta try the baga now. And so it&#x27;s like there&#x27;s there&#x27;s really no end for someone like me who&#x27;s like, hey, crack open a bottle of wine, I wanna check it out.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Yeah. Yep.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">and for someone who&#x27;s you who&#x27;s in the business, there&#x27;s really no end to like what you can discover that&#x27;s new or what you can find that this is different.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">There is zero, there&#x27;s zero end. And on top of that, you know, there&#x27;s a new vintage every single year. So the wine&#x27;s different. On top of that, you have places like I love Portugal. I&#x27;m gonna eventually live there a couple months out the year someday, live a couple months there, live a couple months here. I I&#x27;m gonna go there in two weeks to see some friends. I think the wines are why they remind me of Italy. It&#x27;s it&#x27;s awesome because there&#x27;s so many unique varieties there, like Italy. You go to places like Italy, they&#x27;re super saturated, where every region, there&#x27;s tons of wineries.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Yes.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">And there&#x27;s no way you could cover there&#x27;s like it&#x27;s impossible to literally try every type of wine produced in Italy in a lifetime. It&#x27;s literally impossible. So p that is what&#x27;s exciting and wine tends like hard like when you get hardcore to it, it usually it&#x27;s attracts really geeky people. Something like watches too. I&#x27;m in the watches and so and you know, watches can attract pretty geeky people. But it&#x27;s fun because there&#x27;s it&#x27;s it&#x27;s never ending learning.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Right.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">And I think that we&#x27;re happiest as human beings when we&#x27;re making progress towards something. And if we&#x27;re curious, if we&#x27;re always learning about something, that&#x27;s when we&#x27;re always happiest.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah. Yeah. I I totally agree. I totally agree. How do you I got one more wine technical question? when you do your videos, you do a bl so two things. You do a blind tasting. But for hold on, let me before I get into that. You were just talking about earlier about how most people, you know, it they have a glass of wine, they&#x27;ll have it with dinner, they don&#x27;t really think about it. What I love another thing I love about your content is you&#x27;ll do you&#x27;ll do a series on Costco.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Yeah. Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">You&#x27;ll be like, hey, this is what&#x27;s in Costco. this is what I&#x27;m tasting locally at my Costco, which is which can be very good wines, but are also anyone can go and pick those up that day after they watch the video. which I really like that it&#x27;s like, hey, anybody can go have these right after I post this video.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Well I just po I just shot up a Costco video actually today. Just like literally a couple hours before we we got on. I got to edit where I compared the No, I haven&#x27;t come out with it yet where where you have Costco wines and then compare it to like if you have a Chablis Costco. What is like what does a regular Chablis taste like? And yes, I do the blind tastings. I it&#x27;s it&#x27;s I can&#x27;t do a double bl I&#x27;m a one man show. I usually have to secure the wines, either buy them or or you know, I curate them through PR agencies or</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">okay. Okay.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Or importers, whoever wanna wanna send things to me. I usually know, but what I do is I usually bag them up, and then I get somebody to mix them up for me. So that&#x27;s can be a pain in the butt because I&#x27;m a one-person show. I always have to find some b somebody around that can mix things up with me and not screw them up. So that&#x27;s what I&#x27;d like to I I do want to do more access I realize that I do have to start doing much more accessible wines, much more supermarket reviews, stuff that</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">It&#x27;s it&#x27;s it&#x27;s funny in in wine unlike it. What&#x27;s difficult in wine, and people wine spectator knows this, for instance. If they put Bordeaux on the cover, Napa Cab, that issue&#x27;s gonna sell out. Because people know that. And even though Bordeaux can get old, people still want to know about it, just some the the top end luxury stuff, the well-known stuff, or the real bottom cheap stuff. That&#x27;s what like gets views, gets attention. And YouTube at the end the day is a platform for entertainment.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Right.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">It&#x27;s it&#x27;s called YouTube. It really should be called them tube because it&#x27;s all about the audience, what they want to watch, which makes me sad in a way, because I&#x27;ve just had to get over this my ego on this myself. I find the most interesting wines are in the middle class. I think at 20 to 60 bucks, that well, the prices are razing everywhere. It used to be for me like 20 to 50. Maybe it&#x27;s like 20 to 60. You can get drink some of the most exciting, some of the best wines in the world if you know what you&#x27;re looking for. If you have a little, if you have quite a bit.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">moderate to really good knowledge or you know somebody well. But you know what? Most people don&#x27;t because distribution is difficult. Why these wines are not like Coca-Cola. They&#x27;re not available everywhere. And the difficulty in terms of having to find specialty shops that every market&#x27;s different in America. It&#x27;s more like 50 markets. And on top of that, the language of wine is really intimidating. That doesn&#x27;t get a lot of attention, that middle class of wines. And that&#x27;s unfortunate because to me that&#x27;s where the real exciting stuff</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">And hi so how do you do the when you&#x27;re rating the wines, you&#x27;re using the kind of standard wine rating up to a hundred points? How how when you&#x27;re like this is ninety one, this is ninety-three, what how how are you defining that? How are you it&#x27;s it seems like it it obviously it&#x27;s arbitrary, it&#x27;s your opinion at the end of the day. but it it&#x27;s how does one get what are the nuances that get someone up to the next level?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Score scoring s that&#x27;s like c scoring can look a little bit contrite, and maybe in a way it kind of is. I think it just comes from experien and first of all, I tell people you can&#x27;t a score wine changes so much and our neurology changes so much. Giving a wine a score is just a reflection of how that wine showed at that exact moment in time, with how your mood is and how your neurology is at that exact point in time. In general</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yes. Right.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">for those top end big time names as I&#x27;ve gotten more into it because you got a taste and you have to have a con you have to have context. You have a have a Rolodex of information. Sometimes it&#x27;s hard to all right, does this wine, are we scoring it overall in terms of its quality or if it&#x27;s Chablis, am I scoring it in Chablis? Or if it&#x27;s Chardonnay, am I scoring it in the realm of California Chardonnay? When I do wine competitions, you usually it&#x27;s blind, you usually know the grape, the region and the vintage. So that way you can compare and stack up.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">to what your benchmarks are. so that&#x27;s what that&#x27;s how I generally try to do it. I I tell I don&#x27;t make the hugest I used to not score and then people wanted to score because people I mean I like reading scores too because I like to I I don&#x27;t always agree, but I want to see if people put their their butt, put their reputation on the line, basically. So I I don&#x27;t make it super, super serious and also gives me just a way to to give hierarchy when I am tasting wines.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Right.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">So it&#x27;s just I think it&#x27;s just a matter of context and experience. Anybody can actually score anybody could score a wine because what is it for you? Like a point a wine that&#x27;s quote unquote a ninety-five point wine for me may be absolute crap to you. I mean I I mean I&#x27;m not a big ca I&#x27;m not a big California cab guy. You know, I I&#x27;d rather I I like it. I like the Italian varieties in America. I I like Oregon Pinot Noir, I like I like Chardonnay or Pinot Noir Syrah from Santa Barbara County. That&#x27;s kind of</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Right.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">more where I&#x27;m at. So it is it is completely subjective and people have to understand that scores even by the big names. I&#x27;ve tasted with a lot of the big wigs in the wine industry. Everybody makes mistakes, everybody misses things from time to time, and everybody has their own opinion.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Sure.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Yeah, yeah. I I I have depending so I have let&#x27;s let&#x27;s bring it down okay, I&#x27;ll start with three and whittle down to one. I could be happy for the rest of my life drinking Sangiovesi, mostly Chianti Classico, Riesling from Germany, and it doesn&#x27;t matter what level dry doesn&#x27;t matter, and champagne. If I had those three wines, I would be happy for the rest of my life.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">I I I definitely do not drink champagne every day anymore. But that&#x27;s like what it&#x27;s when I&#x27;m when I break down all my business life goals, that&#x27;s like a general goal, like I gotta get the point where I can just drink champagne whenever I want every single day.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Ha ha that&#x27;s hilarious. That&#x27;s hilarious. That&#x27;s great. That&#x27;s great. I actually it only recently have I started to enjoy champagne. For the longest time, I I just was like, I don&#x27;t get it. I don&#x27;t get it. And then I had a one bottle. I had a Paul Roger and I was like, which is a very nice champagne. And I was like, okay, this makes sense now. And since then, I don&#x27;t know what it did. I don&#x27;t know how it rewired my brain. But then even lower price champagnes now, I I can tolerate. It was really interesting how that happened.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Well, no, it&#x27;s funny. I it&#x27;s so funny. Arm well, first of all, I&#x27;m gonna ask what your one wine is. But for me, when you talk about that, when I got into wine professionally, champagne I liked, but I never got crazy about it because I&#x27;ve always thought it tastes the same. Until you start tasting things professionally, start tasting side by side, you start taking tasting aged bottles. Age I love aged vintage champagne. So I can totally see, and it&#x27;s not the easiest wine for a lot of people to drink. It&#x27;s su such high acidity, it&#x27;s so sour.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">It&#x27;s quite minerally. It&#x27;s not overtly fruity. So I can see a lot of times where people just really don&#x27;t enjoy the flavors of champagne. But it&#x27;s I think it&#x27;s the s I think orange wine&#x27;s the most versatile, but think it&#x27;s the second most versatile food pairing wine and you can go with almost anything. I give orange wine a little bit of a push because orange wine&#x27;s actually you can have with salad and you can have with sweets just because the way the tannins and the structure are. That&#x27;s just my personal opinion. what&#x27;s your what&#x27;s your one wine that you</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yep. Totally. Totally. Yeah, yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Could live with forever.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">You know, I honestly like you, I I so two years ago, let&#x27;s say, I would have said a Sangiovese, maybe probably a Brunello or a Nobel de Montepucciano. but you know, I I&#x27;ve I&#x27;ve had some aged nice Barollos. And I would say I that would pro I know those are big wines and I don&#x27;t think you could have it on a hot day in a desert island, but I they&#x27;re they just they hit the spot</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">They&#x27;re pretty magical wines. My only problem with Nebbiola is it&#x27;s it&#x27;s a pretty hard wine to drink on its own. The tannins are so aggressive. You gotta want the t you gotta give you a masochist in a way. Like I have a cellar stocked full of Barolos and Barbarescos, and I just haven&#x27;t been enjoying them as much lately. I can&#x27;t even remember last time I opened you know w one of my b matured bottles. So but I get it. I think if they could tra if I could make it a way where I could just smell because some Nebbiola is one of those wines, right? You can just smell it. Like I&#x27;m just completely</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah. Wow. You can smell it. You can. You totally can.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">I&#x27;m just completely satisfied smelling it. that&#x27;s a good call though. A lot of people and and there&#x27;s a reason why these wines are are so sought after and is now quote unquote the new Burgundy.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">He totally can. Yeah. Yeah. We had a I think I I know I mentioned w we spent a day in Multiple Giano and it was in the fall and it was raining. And so we had like the whole town to ourselves for the most part. And the kids were bored to tears, but the couple of restaurants were open and a couple of wine shops were open and there were no customers. And so we just had we just had one of the most pleasant days ever, kind of touristing being a tourist in what should be a jam packed town in Italy. It was off season.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">it&#x27;s it&#x27;s that&#x27;s that&#x27;s what wine does. That&#x27;s great. That&#x27;s that&#x27;s the most powerful thing about wine does. And Nobel de Montepolciano is is really one of the you know, it&#x27;s one of the three great Sanjaves of Tuscany, but it&#x27;s kind of underrated. And there are some wonderful and it&#x27;s changing the region&#x27;s changing a lot. So there&#x27;s a lot of wonderful, wonderful wines in that area. So that makes me happy. I I&#x27;ve did some projects there. I I go to Tuscany often, so that kind of warms my arm. And Sanjiovese&#x27;s my favorite red wine grape.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yes.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">So that touches my heart. That&#x27;s good to hear.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah. All right. I&#x27;m glad we&#x27;re aligned on that. We&#x27;ll have to we&#x27;ll we&#x27;ll have to crack a bottle in person one time and and and talk about that. Matt, I really appreciate your time and this has been a great chat. I will drop some links to where people can find you. Is there a website that dedicated to you or but we&#x27;re just talking the YouTube the socials? Okay.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Yeah, yeah. No, I I I&#x27;ve I just YouTube, just YouTube at Dr. Math if you look Dr. Matthew Horky, if you put it in a Google, I come up I did buy a couple domains. I siv I&#x27;m one man show, so I have not put things up yet. my old website still exists. I think it&#x27;s somebody bought it. It&#x27;s it was exoticwine travel.com. Maybe they changed it to wine travel dot com. I my old articles are up there, but if you look up Dr. Matthew Horky, everything comes up in all the socials.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Ha ha. Okay. Okay. Fantastic. All right. Hey, thanks for your time today. Okay.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Matt</div>
+            <div class="t-text">Appreciate it, thank you.</div>
+          </div>
+        </div>
+      </details>
+
+      <details class="ep-item" id="ep-16">
+        <summary>
+          <div class="ep-num">16</div>
+          <div class="ep-summary-main">
+            <div class="ep-title-row">Show Confidence Because They Can&#x27;t Eat You</div>
+            <div class="ep-guest-row">with Lloyd Nelson, Executive Recruiter &middot; 53 min &middot; August 19, 2026</div>
+            <div class="ep-one-thing">Lloyd Nelson is a former recruiter and sales leader, and is currently a career coach and advisor. He learned a valuable lesson early in his career, that it&#x27;s easy to show confidence because what&#x27;s the worst that can happen? They can&#x27;t eat you.</div>
+          </div>
+          <div class="ep-toggle">
+            <span class="closed-label">Read transcript &darr;</span>
+            <span class="open-label">Collapse &uarr;</span>
+          </div>
+        </summary>
+        <div class="ep-body">
+          <div class="ep-body-embed">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4gLVvyaHSOeZrqDYfhMiop?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          <div class="transcript-note">Lightly cleaned for readability. Some filler words and false starts removed.</div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Hey Lloyd, thanks for joining me today.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Thanks for having me.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah, this is great. We&#x27;ve been talking about this for a while, so I&#x27;m glad we could connect. And full disclosure, we&#x27;re doing this on company time, because I feel like this is a company call. You know what I mean?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Yes, it is. It is. So you know we&#x27;re we&#x27;re we&#x27;re both ready. We&#x27;ve been looking forward to this.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">All right. So I want to start before we even talk about recruiting and your career, I want to talk about growing up, your father&#x27;s famous musician. tell us a little bit about that and and and some share some stories from from that era.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Well, he is a a Rock Roll Hall of Fame inductee from two thousand and one. He was lead singer with the Flamingos from nineteen fifty-three to nineteen sixty. if people remember the doowap era and they remember the song I Only Advise for You and also remember that song for recent movies, they&#x27;ll know that that was him and his voice. From sixty to sixty-four, solo artist based in New York.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">And the platters, that&#x27;s only you, Smoke in Your Eyes, The Magic Touch, The Great Pretender. Yes. E every Marty Scorsese movie those songs seem to end up in.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Smoke gets in your eyes, yes. Yes, all of those. All of those. Yep, and and and De Niro&#x27;s as well.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">And did that did you travel around? Did you go to shows? like how did that influence you at a young age?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Well, we couldn&#x27;t necessarily travel around because we were in school.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And so all the moves really happened as a result of where his work was concentrated. So I was born in New York, we lived in Philly for a little while, we moved to Atlanta, Georgia, and we moved up to New England. And so those moves all happened because of where he was working at the time.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay. Okay. And then so then you grew up in the New England area. how did you get into recruiting? And maybe what did you do before did you do anything before then before you got into to that area?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">I graduated from college, Bryant University in in eighty-three. And so upon graduation, I already had work lined up in the hospitality industry in in the greater Boston area. And then saw pretty quickly that that was not a future that I wanted. So I had gone to a recruiting firm, and the recruiters talking to me and I&#x27;m answering questions. And then after that meeting, I thought,</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Why is that? Okay.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And I always say, I always say in all seriousness, you can&#x27;t measure heart. And that&#x27;s real that&#x27;s really what it comes down to. I have my theories, but the one that I stick with is you can&#x27;t measure heart. You can&#x27;t measure someone&#x27;s desire to make it. You can&#x27;t measure somebody who will do anything it takes, and not just not just the saying, but someone who actually believes it.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Right. That&#x27;s Mm-hmm. Yeah, I think about that like like a pro sports. Pro sports is a good example of that. There&#x27;s always a player or two number one pick overall, or this is a top ten, this is a camp miss, and then it doesn&#x27;t work out. And then there&#x27;s somebody who goes undrafted who who makes it. And it&#x27;s true. It&#x27;s the intangible no one can put their finger on.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">I mean. Yes, it is. Yes, yes.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah. And w what about so what is it about the recruiting space that you liked that made you wanna kind of plant your flag there and and make that into a career?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Well, at the time, really what it was was that I loved it.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">and and that&#x27;s a big deal with me to be able to stay engaged. And because of that, that&#x27;s what helped me. On the other side of it, though, we didn&#x27;t talk about my mother, but she was in sales in the 1970s at a time where husbands didn&#x27;t want their wives to work.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And she built a 40-year career in Mary Kay Cosmetics. And and it wasn&#x27;t just about selling products, it was about showing women how they could really grow amongst themselves and become a person that maybe they had dreamt that they wanted to become, but never had any real support to think they could get.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And so I always say that with with my siblings, we followed her much more so than we followed my dad.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Right.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">we all had musical talent. none of us wanted to get involved in it. See, I saw I can&#x27;t speak to my siblings, but what I saw was the dirty side of the music industry. And and I wanted no part of it. And I would still want no part of it because as I&#x27;ve gotten older I&#x27;ve learned even more of the dirt and the mess that goes on behind the scenes. Just did not interest me.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Gotcha. Gotcha. Sure. Yeah. Yeah. Yeah. So then how do you go from the east coast? You end up out west. How does that move happen?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">I was sick of Boston. and so I I packed up a car. My childhood buddy jumped in the front seat with me and we drove cross country, got to San Jose, California in six days. I had no job, but I knew where I was going. I knew San Jose, California was this place called Silicon Valley with a lot of companies. And with a lot of companies, I didn&#x27;t know much. I thought I did, but I didn&#x27;t know much.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">But I knew there would have to be a recruiting opportunity for me somewhere. And I landed a position three weeks after I touched down in San Jose.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">And what was that?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">It was a it was a a recruiting firm that was technology based, of which I knew nothing about.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay. Okay. And it and this is this is a fur this is a agency. So this is a f firm that&#x27;s hired go ahead.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Well, they consider themselves yeah, they consider themselves to be a recruiting firm rather than the agency level. so that was where I started and as I say</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Am I glad I made the move? Yes. did I underestimate my ability? Excuse me, I overestimated my ability and underestimated the the road that you have to travel when you are uprooting your life and starting over. Because I only knew one person when I moved to San Jose. I didn&#x27;t know anyone else. So I in effect had to start over. But it was better for me than staying in Boston.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Nowhere close. Everything was as manual as you probably imagine it. so you&#x27;re talking about what people would now know as old school, having to having to find and create contacts, reaching out to them on the phone.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">But it was it was grassroots, bare bones, reaching out to people you don&#x27;t know to elicit interest in job opportunities that you had in your pocket.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Right. I I remember my first job out college being called at my desk by a recruiter about another opportunity. And it was like, How did you even how do you even know who I am? Like, how did you even find me? And how are we talking on the phone right now where, you know, you almost want to duck bel duck under your desk to have that to have that phone call? but that&#x27;s what you&#x27;re doing. You&#x27;re calling</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Mm-hmm. I can&#x27;t share the details with you. Yeah, I can&#x27;t share the details because I don&#x27;t remember them much anymore. But I can tell you that there are always there have always been ways to find people. Always. And so there is a a tactic that used to be used all the time, which is pr rarely used now called sourcing. And so back then it was about how can you be as</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Conniving as possible to source names.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Right. Right.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">&#x27;Cause I believe you never throw away a name.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And I don&#x27;t try to understand it anymore. That&#x27;s just the way that they do business, because they have resources that I didn&#x27;t have. But at the time, resources I had is what I used.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Was it what year what years are we talking about here?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Talking about late eighties and early nineties.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay. Was it relatively easy to place people into tech companies? Was it where where were we early nineties? There was a little bit of a slowdown. but you&#x27;re in Silicon Valley, which is growing and growing and growing. how was the business at that time?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Well, the business has always had peaks and valleys. and what I learned very early on, that should never be enough a factor in terms of the work you do. You forge ahead. So while a a marketplace may be slower than what someone desires, you put in the work, you can still make it happen. Most people in recruiting, the reason why they never made it.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Because they quit gave up too early. If you can just stick with it and hang in there, it has to work because what you&#x27;re building, you&#x27;re building clientele, you&#x27;re you&#x27;re building, as they say back in the day, the Rolodex, you&#x27;re building contacts. And and so when you&#x27;re working in an office with other people, that&#x27;s a big factor too. You work with other people, they have contacts. This is how the synergy works.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Whether it&#x27;s finding job openings or whether it&#x27;s finding job talent. You didn&#x27;t see a lot of people on their own at at at that time period, th the the very late eighties, but you know, it it evolved. And it certainly evolved in the nineties.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah. Yeah. Sure. Sure. So you you eventually get out of recruiting and go to well what did you do? After you leave recruiting, what did you do? And what when was that timeline?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">I left recruiting in 2007. I had gone to I had gone to a legal firm where I live here in Las Vegas and I was going because of my real estate investment pursuits. And I was fascinated by the work they did because they they dealt with corporate structures, corporate compliance, asset protection as related to both the courtroom as well as the RRS. they helped</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">They helped these business owners develop business credit to separate the business wallet from the personal wallet. And they wrote real business plans. And they were involved in what people know of as a format of estate planning. And so I went to this company for the fact that I was getting involved in real estate. I was fascinated by the work.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And that was at the same time where I was about sick of recruiting because I had had such a long run. And what I saw in this particular legal firm was to be able to dive deeper into business. And I really wanted that. And so you know, maybe similar to how I started recruiting in the first place. I went in, I went in as a client. I I I asked about opportunities. The president</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah. Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">and founder of the company took a liking to me and I joined. And and I became managing partner of that legal firm during the seven year run that I was there.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">What did you what was your role there? You obviously weren&#x27;t an attorney.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">No, I wasn&#x27;t an attorney. I was an attorney in fact, as they call it, because we had attorneys on staff that that worked for me. I had five attorneys on my payroll. But what I was doing was I&#x27;m talking to people about corporate structures. Meaning corporations, LLCs, for folks who are setting up nonprofits for various reasons. The compliance. Without compliance, you don&#x27;t have a corporate structure to protect you.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay. Okay. Okay. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And that&#x27;s what the corporate veil is all about, is separating you from your business.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">wow.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And and that was fantastic as well. And I got involved in helping these businesses create and form business credit so that people didn&#x27;t destroy their own in a business that they still had to work and not all of them really understood that you can&#x27;t let it crash. So how do you so how do you separate how do you separate the business world from your personal world? That&#x27;s where business credit development came in and I took over that.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Right.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">part that&#x27;s probably the most satisfying for me, the founder of this company is known as one of a handful of experts in the area of asset protection in the country. And he&#x27;s he&#x27;s made it a point after the end of our business to let everybody know that he&#x27;s the best that&#x27;s out there. And he said that I was the second best.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay. Ha ha.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And that&#x27;s not an insult. Yeah, that it&#x27;s not an insult at all, you know. the the the the business ended because when the rest of the country is going through recession in that tw that twenty eleven to thirteen time frame, Nevada was in the midst of a depression. Yeah, yeah. So even though we had clients in eighteen countries, it didn&#x27;t matter. because still we were based in Vegas and the business dried up and</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">take that. Yeah, yeah, yeah. Yeah. Yeah. Totally. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">You only hang on for so long. So when that happened, I&#x27;m a good friend of mine still of over 30 years. We had worked together, but this time she placed me. And for that I had to move from Vegas back to Northern California. And she placed me with a little itty bitty company called AutoZone. The software division, the SAS division is called All Data, it&#x27;s in the Sacramento area.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And and that led to a multi-year journey of corporate sales. No one ever thinks as recruiters as being salespeople, but the fact of the matter is we always were. In fact, harder because because the sales are two-sided, not a one-sided. And so and and so that gave me the experience in the whole world of of enterprise software. Starting with SaaS and then with cloud, moving from</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">From all data autozone to Oracle. And then moving from there to a startup that specialized in green energy initiatives for California and Florida homeowners. So I actually picked up the quote unquote traditional sales that people think of, but I already had it from recruiting. I just I just I just married them together. Now what&#x27;s interesting about this is that where we work today.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay. Sure.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">In 2007, I met a gentleman by the name of Ron Nash. In 2007. So all these years later, we finally had a chance to work together. Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah. Yeah. That&#x27;s pretty cool. That&#x27;s pretty cool.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">But I remember meeting him saying, Who is this? and I don&#x27;t mean that in a negative. I mean it from the and I&#x27;ve never told him this. I meant it from the intimidation side. I just thought he was the sharpest tool I had seen in any shed.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Ha ha ha</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And I just told myself that one day I was gonna have to work with them. And here we are. Yeah. Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">And here here we are. Here we are. So so when you&#x27;re in s so recruiting is a sales job because you especially when you were doing it, because you&#x27;re cold calling, you&#x27;re tr trying to con you&#x27;re you&#x27;re trying to convince someone to try something, right? Which is come along with me and I&#x27;ll I&#x27;ll let me put you in front of these people. and then you have to get them ready for, you know, this is your client, so you don&#x27;t want to put anyone in front of them.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Right. Right. Yes, they did. They did. Because I had I had the building blocks. I had I had the building blocks for sales. And so to me the transition was not difficult.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Right. Right. I mean I gotta think recruiters, it&#x27;s up there with you know, the phone being hung up on you, it&#x27;s up there with a lot of jobs where you have to get someone on the phone.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">I just w Well, well, listen, I used to tell people all the time, as a recruiter, we used to be hung up on 50 times a day. And that&#x27;s not even an exaggeration. It was 50 times a day. At some point, if you don&#x27;t get that thick skin, you&#x27;ll never make it. But I don&#x27;t believe you&#x27;ll ever make it in any business. But that&#x27;s usually that&#x27;s usually what wears people down. The combination of being hung up on because they take it personally.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Plus the fact that they&#x27;re not successful.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">What do mean? Right. Right. Right.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Where did you fall short in the hundred and fifty steps?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">One of the slaps in the face that I needed was the fact that I wasn&#x27;t as good as I thought I was. And the first two years I failed at every turn you could think of. And as a result, I made a commitment that I was going to become a continual learner of my craft and not wait for any company to pay for it for me.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">I wonder how much of that exists today, you know, but that&#x27;s what I had to do. And ever since then I&#x27;ve been I&#x27;ve been a a sales nerd, an information nerd, a communication nerd. And it served me pretty well.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah. Yeah, I think the industry gets a bad rap today. Maybe some of it self-inflicted deservedly so. I I once had a call for a position that was a no-brainer. I should have been the top candidate, if not a candidate. And in talking to the recruiter, you could tell she wasn&#x27;t really paying attention to what I said. she was distracted. There was a lot of background noise, and then at one point,</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">She was like, hold on a sec, I&#x27;m switching trains. And it&#x27;s like, okay, well, you&#x27;re not l really listening to what I&#x27;m saying. If you&#x27;re switching trains in the middle of a phone call, you&#x27;re not whatever you&#x27;re whoever you&#x27;re talking to. and so, you know, I&#x27;ve had that experience. I&#x27;ve had the experience where the recruiter reaches out to you via email and then you respond and the you then you never hear from them again, which is always crazy.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Yeah. Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">I&#x27;ve had the experience of, you know, they don&#x27;t know what the job is. They can&#x27;t explain what the job is. so yeah, I&#x27;ve I&#x27;ve been through a few experiences where it&#x27;s like, you know, these people aren&#x27;t that good at it.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Well, I don&#x27;t put all of it on the shoulders of the recruiters anymore. I I I I put the blame on these company managers and the ownership because they&#x27;re not training and developing people. You can only do so much. and if you don&#x27;t have if you don&#x27;t have strong leadership and particularly strong mentorship, you&#x27;re going to get the results that you had gotten and the experiences that you had.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">I was fortunate, never I never worked for anybody who was even close to that. So when I hear it, yeah, yeah, we&#x27;ve got we&#x27;ve got recruiters that are not good. And the industry has regressed, in my opinion. But I put it more on the owners of these companies. They don&#x27;t know anything. And so if they don&#x27;t know anything, how can their respective teams know anything either? Because not everybody.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Not everybody has the gumption to reach out on their own and figure out what they don&#x27;t know and learn it. So that&#x27;s the way I look at this energy. Has it regressed? Absolutely. Absolutely. and and then the other part is just like what we talk about, language and positioning. It&#x27;s amazing, it&#x27;s amazing how ubiquitous that is in every industry, in every segment, no different than recruiting firms. And this is why what I share with people about.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Right. Right. Right. Right. Mm-hmm. Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Is understand who you&#x27;re speaking with. And and just because they reach out to you doesn&#x27;t mean what they have to talk about is legit. When you come across someone that you know the lights are on, that have a level of higher narrative intelligence, that&#x27;s who you stick with and that&#x27;s who you work with.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Right. Mm-hmm. So then you correct me if I&#x27;m wrong, you got back into recruiting after doing corporate sales. How did that happen?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Mm-hmm. Yeah, I did. I did. while I still don&#x27;t know why. my theory is because of the owner of the firm in the nineties that I was with, and we were the largest privately held accounting and finance specific search firm on the entire West Coast. He had sold the business, got back into the business, and I had a chance to to basically reun reunite with him.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And help him build a new business, which I did. And that&#x27;s where I went back to. and it ran its course. And at that point I said to myself, I&#x27;m not doing any more recruiting. So a lady that I had hired during those days at this this accounting and finance search firm, she she left she left the corporate recruiting world.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And it took me about two seconds to say yes. Because that was the one piece of experience that I had did not have. I had everything else, never worked in a corporate environment. I joined that corporate environment and and I&#x27;m proud to say I was a lot better than they thought I was going to be.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Yeah. Yeah. So what was that like? What was working at In Nvidia? What was what year what years were that and and what was that like?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Yeah. I I that was in 2022. I and then again in 2024. I enjoyed it because it was it was a new experience. So there I am back in a learning mode, which I always like. And a NVIDIA gave you the opportunity to use your brain. And where I use my brain was bringing concepts that I knew worked. And</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">had to had to show some people that yes this works in a corporate environment a corporate arena as well and you&#x27;re just gonna have to trust me. I know that&#x27;s bold but that&#x27;s the way I felt. And we created success in a pretty short period of time. And so it would that was great. and Nvidia at the time they were just getting their momentum to the Nvidia they are today.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Right.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">But they had momentum. the only difference was that if you called east of the Mississippi River, people wouldn&#x27;t recognize what an NVIDIA was. That was the only difference. Great firm then, great firm now. it was it was fantastic with the run that we had. And then I had a chance to go back. Now it was not the role that I should have gone back to because it was not the work that I was doing before, and I only went back because it was NVIDIA. And you could I can construe that as a mistake.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Right. Right. How do you how</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">But the good news is is that I&#x27;ve got NVIDIA chops.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Sure, sure. So that&#x27;s a company that like</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Mm-hmm. Right. I I&#x27;ll I&#x27;ll tell I will</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">I underline the word struggled. So they hadn&#x27;t gotten their their sea legs underneath them. Second, the vast majority of NVIDIA hires, and I believe it&#x27;s still this way to to this day, unless it&#x27;s a couple of specialized knowledge based talent, the people that they bring on board are contractors first.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Well they had a co th Yeah. Mm-hmm. Okay.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Not full time. So there are a lot of people who are afraid of that even still.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Okay. Yeah, that&#x27;s a different conversation to have with someone.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">It&#x27;s a very different conversation. now I know that in in recent times where previously the concept of remote work was pretty strong and compelling at NVIDIA. I know in recent times they&#x27;ve been bringing people back into the office. So that that wears some of the luster off of people.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">So</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah, that&#x27;s not for ever it&#x27;s not for every Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">within. It&#x27;s not one of those where it&#x27;s not one of those where sixty to ninety days you&#x27;ve got a down pat. No, no. And you know not everybody is prepared for that either. I I saw folks willed by the wayside as a result of</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">So reaching that point, I walked in confident.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Yeah. That and that&#x27;s that&#x27;s eighty percent of it.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">At least</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">is having that having that confidence. You know, my son&#x27;s I don&#x27;t think I&#x27;ve told you the story. My son&#x27;s high school hired a new principal for this upcoming school year. And they had finalists and they brought the finalists onto campus and they had a you know question answer with parents</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Mm-hmm. Okay. Okay.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">of the finalists. So you got to meet all the finalists if you win. So I was talking to my son and he goes, can any of these candidates s stop someone from smoking in the bathroom? And I and I n and when I thought about it that way, I was like, you know what? There is one candidate I think who could. And my dad was like, Well then I hope that&#x27;s the guy we get.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Yeah. I was told I I was told that when I joined NVIDIA that someone went to my boss and said, He&#x27;s been here a week and he&#x27;s walking around here like he actually knows people and knows things. And she said, Yeah, that&#x27;s Lloyd. Because I didn&#x27;t wait for any Brian Brian, I didn&#x27;t wait for anybody to introduce me to anybody. I I knew three names and I</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">And I think Could see that. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Reached out to the people I knew I&#x27;d be working with and say, you know, so and so hired me. you know, I&#x27;ve heard there this is who you are. I&#x27;m coming to introduce myself and understand how I can support you. What was I gonna wait for? And so, but but but it it it was a surprise. It was a surprise to people in NVIDIA. I had done that at all data autozone and really made a stink.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah. Yeah. Of course. It&#x27;ll never happen if you wait. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">when I did that. But it works. Because because from my days with the legal firm, the founder of that company said something very prophetic. They can&#x27;t eat you.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And and as and as goofy as that is, boy is it true. You know? In the corporate environment&#x27;s the worst someone can say to you is no. Across the board in life. Across the board in life. And and what people need to understand is you don&#x27;t have time to be shy. We&#x27;re adults now. We&#x27;re grown. There&#x27;s no time to be a shy adult. There&#x27;s no time to beat around the bush. And at the same time, it&#x27;s inexcusable to be obnoxious.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Totally. Totally. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">So can you just talk to people like a real person? Can you just do that? Seems to be easier said than done. And that&#x27;s all I did.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Right. Right. Right. So we work with people who are looking for new careers, searching for a new job, looking to up level. And what would you what do you think is the biggest struggle that people have when they are searching for that next opportunity?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">There&#x27;s a bunch of them, but I&#x27;ll keep the list short. The first place is the fact that we are operating in what I&#x27;ve called the twenty-first century hiring market. This is not the 20th century hiring market that the people we work with have grown up in, and neither did we. What was successful up to about 2023 no longer works. We work with a gentleman who I th I thought he put it best.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">He used he used an an OS analogy. You&#x27;ve got people who they&#x27;re still hanging on to the fact that their resume says they&#x27;ve got 25 years, 30 years, 22 years, and they think that that should be the ticket to walk in the door. Well, the fact is everybody else has that too. And so they don&#x27;t have a strategy for this 21st century market. If you don&#x27;t have a strategy, you don&#x27;t have a plan. If you don&#x27;t have a plan, then you have nothing to execute. That&#x27;s the number one problem.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Right.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">What you have achieved, where I can look at that and project whether you can help us. I know companies didn&#x27;t speak like that in years past, but they do now. And the market has not adjusted at all. The market has not adjusted to the fact that senior-level talent fall over themselves without articulating clearly clearly the problems they solve. people</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">and and so you hear this pushback of well that that sounds pushy, it sounds salesy, it sounds pompous. Well, you&#x27;re wrong in all three. If you don&#x27;t champion yourself, who will?</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">There&#x27;s five of them. And so in in my role at GHN, I have to address all three of those areas with every single person that walks in the door. And every single person walks in the door needs work in all three areas. We have not seen one that has walked in the door ready made and ready to go, which is part of their problem. That&#x27;s the there&#x27;s other things that we could get into, but if you can&#x27;t conquer that on the front end.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Yeah. Yep.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">There is no back-end ideal next position for you. Now there may be an what the hell? Let me take this job because I need one.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">But the ideal next role, you&#x27;ll never get it if you don&#x27;t work on clarifying your positioning, establishing a go-to-market strategy which spells out your brand, and and really being able to speak to a company about what matters to them.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Absolutely. Absolutely. We had a go go ahead. Yeah. We had a former member of our group who and he was a guest on this podcast. He basically based on a friend&#x27;s suggestion, said I&#x27;m a product guy. I&#x27;m sitting in these interviews telling people I&#x27;m a product guy. He&#x27;s like, Maybe I should just start showing them that I&#x27;m a product guy.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And and that&#x27;s where it starts.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">And so he starts playing around with new AI tools, starts posting it online, posting on YouTube, puts a little short into his LinkedIn profile. All of a sudden he has like this content that he&#x27;s building. And I asked him when he did land a new gig, I said, Did they ask you about your videos in the interview? And he was like, Did they ask me? That&#x27;s all we talked about. And so here&#x27;s a guy that creates some content, makes it interesting.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And and I&#x27;ll even add to that, Brian. I still think that he should have been prepared for the problem him as a problem solver and what companies actually call your superpower and and showing companies&#x27; achievement because that still matters. Now he may not have touched on it as overtly as we prepare people, but covertly it still had to come up.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Mm-hmm. Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">even in those sessions. It&#x27;s it had to. And so what he did was circumvented a bit with the approach that he took. and so I&#x27;m glad he landed what he wanted. And I will also say I think he was fortunate to get what he landed because companies are are are are getting tougher and tougher in the interview stage, particularly when it comes to AI dialogue.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">It still probably came up, sure. Sure. Absolutely. Mm-hmm. Mm-hmm. Yeah. Yeah. And that&#x27;s that&#x27;s changing so rapidly from tell me what you know about AI of six months ago to tell me what you&#x27;ve built with it and how you&#x27;ve built it and what that was all about. And it&#x27;s amazing how many tech folks struggle with that.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">And</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Mm-hmm. Yeah. I believe that. I believe that. I there there&#x27;s a handful of comp more than a handful, but there&#x27;s a group of companies that just lay offs happen and that&#x27;s what they do. And then there&#x27;s the vast universe, like you said, where they don&#x27;t want nobody wants that. They just want people to be more productive. They want to use the tools to their advantage.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">So yeah. Yeah. Yeah. Mm. Yep, and and unfortunately, and it&#x27;s always been this way, everyone&#x27;s starry eyed about the big brand name.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">It makes all the headlines.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">This is this and and this is why I was fortunate being in NVIDIA when I was, because the the big brand name is not always what you think it is when you join them. And the good news was particularly that first go round with me at NVIDIA, it was that and more. Yeah.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">Mm-hmm. Yeah. Yeah. Yeah. Absolutely. Absolutely. all right, we&#x27;ve gone a little bit over time, so I&#x27;m gonna end it right there. But Lloyd Nelson, thank you so much for joining me. This has been great. Now we gotta go back to work now.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Okay. No, thank you for having me. This has been exactly. Have a great one.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-a">Brian</div>
+            <div class="t-text">All right, you two.</div>
+          </div>
+          <div class="t-row">
+            <div class="t-speaker sp-b">Lloyd</div>
+            <div class="t-text">Thanks.</div>
+          </div>
+        </div>
+      </details>
+
+    </div>
+
+    <footer>
+      <div>&copy; 2026 DeterminationPod.com</div>
+      <div>
+        <a href="/">Episodes</a>
+        <a href="/#about">About</a>
+        <a href="mailto:brian@determinationpod.com">Contact</a>
+      </div>
+    </footer>
+
+    <script>
+      // Auto-expand an episode if the page is loaded with #ep-N in the URL
+      window.addEventListener('DOMContentLoaded', function () {
+        var hash = window.location.hash;
+        if (hash) {
+          var target = document.querySelector(hash);
+          if (target && target.tagName === 'DETAILS') {
+            target.open = true;
+            target.scrollIntoView();
+          }
+        }
+      });
+    </script>
+
+  </body>
+</html>
